@@ -1,3 +1,4 @@
+using BenchmarkDemo.DapperDataAccess;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BenchmarkDemo.Controllers
@@ -16,6 +17,7 @@ namespace BenchmarkDemo.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+           
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
